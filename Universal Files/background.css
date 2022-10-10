@@ -1,0 +1,17 @@
+
+/* background image and font family, universal */
+html {
+    background-image: url("images/miyamoto_musashi2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* universal font family */
+    font-family: "Trebuchet MS", sans-serif;
+    /* universal font format */
+    font-size: 1.5vw;
+}
+
+/* quick fix*/
+body {
+    margin:0;
+}

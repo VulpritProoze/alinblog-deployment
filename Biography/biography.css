@@ -1,0 +1,59 @@
+
+/* css file for biography.html */
+/* shall not be reused anywhere else! */
+
+/* https://coolors.co/461220-8c2f39-b23a48-fcb9b2-fed0bb */
+
+/* img-container */
+.img-container {
+    position: relative;
+    float: left;
+    margin: 2vw;
+    height: 15vw;
+    width: 15vw;
+}
+/* avatar image*/
+.avatar-picture {
+    shape-rendering: auto;
+    border-radius: 15px;
+    height: 15vw;
+    width: 15vw;
+    position: absolute;
+}   
+
+/* image swap */
+.img-container #pic2 {
+    transition: opacity .5s ease-in-out;
+}
+.img-container #pic2:hover {
+    opacity: 0;
+}
+
+/* address img facebook logo */
+address img {
+    width: 4vw; 
+    height: 4vw;
+    object-fit: cover;
+}
+/* address hyperlink format to change font color*/
+address a {
+    color: red;
+}
+
+/* format texts */
+/* dropcap */
+.text-content:first-letter {
+    float: left;
+    font-size: 500%;
+    line-height: 0.65;
+    margin-right: 1vw;
+    margin-top: .5vw;
+}
+
+/* indent 2nd paragraph */
+.text-content p:nth-child(3){
+    text-indent: 4vw;
+}
+.text-content {
+    text-align: justify;
+}

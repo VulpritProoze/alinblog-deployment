@@ -1,0 +1,9 @@
+.text-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.text-content .list {
+    padding-left: 3.5vw;
+}

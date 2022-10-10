@@ -1,0 +1,29 @@
+
+/* formatting main-header */
+
+/* main-header */
+#main-header .container {
+    width: 100%;
+    height: 12vw;
+    border-radius: 0.5vw;
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    bottom: 0;
+}
+
+#main-header .container img {
+    position: absolute;
+    object-fit: cover;
+    height: 12vw;
+    width: 100%;
+    /* border radius */
+    border-radius: .5vw;
+}
+
+#main-header .container .banner1 {
+    transition: opacity 0.5s;
+}
+#main-header .container .banner1:hover {
+    opacity: 0;
+}

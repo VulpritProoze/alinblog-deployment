@@ -1,0 +1,59 @@
+
+/* formatting gallery.html */
+
+table img {
+	object-fit: cover; /* for img tags */
+	border-radius: 2vw;
+	height: 12vw;
+	width: 12vw;
+	transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+}
+table img:hover {
+	width: 13vw;
+	height: 13vw;
+}
+
+
+/* x-position change for other images */
+table .img3{
+	object-position: 20% 0%;
+}
+table .img7{
+	object-position: 10% 0%;
+}
+table .img8{
+	object-position: 10% 0%;
+}
+
+/* fixing the stubborn unaligned .container in gallery */
+.gallery-container tbody{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* finally working. putting space-between images */
+.gallery-container tr {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 90%;
+}
+
+/* I discovered a problem. Eventhough I used vw for all my measurements, whenever I change the browser size, my gallery still break. I figured it must be something preformatted in table. I used inspect element and it is indeed the reason. The <table> tag has 2px on border-spacing. It is apt for me to change that measurement into vw, I think. */
+.gallery-container table {
+	border-spacing: .07vw;
+}
+/* spoiler alert: it only helped a bit. I think I need media queries which will change some css when screen size reduces to less than the specified width. */
+/* attempting  media queries */
+@media only screen and (max-width: 900px) {
+	.gallery-container img {
+		height: 9vw;
+		width: 9vw;
+	}
+	.gallery-container img:hover {
+		height: 11vw;
+		width: 11vw;
+	}
+/* I didn't realize it would work. Very cool*/
+}
