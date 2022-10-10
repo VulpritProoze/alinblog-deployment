@@ -24,7 +24,7 @@
     border-radius: 0.5vw;
     position: relative;
     /* decided to just add a background image */
-    background: url("images/kanagawa-great-wave.jpg");
+    background: url("Images/kanagawa-great-wave.jpg");
     background-size: cover;
     background-position: 0% 70%;
     /* left-right padding fix*/

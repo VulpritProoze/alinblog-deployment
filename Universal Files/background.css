@@ -1,7 +1,7 @@
 
 /* background image and font family, universal */
 html {
-    background-image: url("images/miyamoto_musashi2.jpg");
+    background-image: url("Images/miyamoto_musashi2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

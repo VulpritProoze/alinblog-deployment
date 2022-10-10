@@ -88,7 +88,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url("images/kanagawa-great-wave.jpg");
+    background: url("Images/kanagawa-great-wave.jpg");
     background-size: cover;
     background-position: 0% 70%;
     border-radius: .5vw;
