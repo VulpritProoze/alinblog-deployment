@@ -1,0 +1,66 @@
+main .gallery {
+    display: flex;
+    flex-flow: row wrap;
+    gap: .5vw;
+}
+
+main .gallery img {
+    height: 15vw;
+    width: auto;
+    border-radius:.2vw;
+}
+
+main .h-container span{
+    font-size: 70%;
+}
+
+/* checkbox trick */
+/* for img1-div */
+/* i did not expect this to work at all! impressive!*/
+input {
+    position: absolute;
+    opacity: 0;
+}
+/* for first image*/
+#check1 ~ * #good-moral{
+    transition: height 1s ease-in-out, margin-left 1s  ease-in-out;
+}
+#check1:checked ~ * #good-moral{
+    height: 30vw;
+    margin-left: 10vw;
+}
+/* second image */
+#check2 ~ * #journal{
+    transition: height 1s ease-in-out;
+}
+#check2:checked ~ * #journal{
+    height: 30vw;
+}
+/* third */
+#check3 ~ * #ssc-elem{
+    transition: height 1s ease-in-out;
+}
+#check3:checked ~ * #ssc-elem{
+    height: 30vw;
+}
+/* fourth */
+#check4 ~ * #dip-elem{
+    transition: height 1s ease-in-out;
+}
+#check4:checked ~ * #dip-elem{
+    height: 30vw;
+}
+/* fifth */
+#check5 ~ * #dip-jhs{
+    transition: height 1s ease-in-out;
+}
+#check5:checked ~ * #dip-jhs{
+    height: 30vw;
+}
+/* sixth */
+#check6 ~ * #dip-shs{
+    transition: height 1s ease-in-out;
+}
+#check6:checked ~ * #dip-shs{
+    height: 30vw;
+}

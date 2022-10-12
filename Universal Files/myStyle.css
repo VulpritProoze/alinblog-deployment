@@ -41,6 +41,9 @@ main .content-wrapper {
     box-sizing: border-box;
     /* background image */
     background-image: url("Images/japan-river.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -73,12 +76,15 @@ main .h-container h1 {
     font-family: "Brush Script MT";
     font-size:3vw;
     text-shadow: .2vw .2vw .1vw rgba(0, 0, 0, 1);
+    width: 100%;
 }
 main .h-container {
     display: flex;
     height: 7vw;
     text-align: center;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 2vw 0;
 }
 
 /* styling footer */

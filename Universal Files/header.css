@@ -17,6 +17,7 @@
     object-fit: cover;
     height: 12vw;
     width: 100%;
+    image-rendering: pixelated;
     /* border radius */
     border-radius: .5vw;
 }

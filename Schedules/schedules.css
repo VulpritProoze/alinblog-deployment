@@ -14,3 +14,9 @@ caption {
     margin-top: 0.5vw;
     font-weight: bold;
 }
+
+.text-content tr  th{
+    font-family: Georgia;
+    font-style:  italic;
+    font-size: 1.8vw;
+}
