@@ -88,10 +88,8 @@
     border-radius: 50%;
     animation-duration: 3.5s;
     animation-iteration-count: infinite;
-}
-    #navigation .logo:hover{
-        animation-name: rotate;
-        animation-timing-function: ease-in-out;
+    animation-name: rotate;
+    animation-timing-function: ease-in-out;
     }
     @keyframes rotate{
         0%   { transform: rotate(0); }
