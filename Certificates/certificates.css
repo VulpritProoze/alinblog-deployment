@@ -1,13 +1,17 @@
 main .gallery {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
     display: flex;
-    flex-flow: row wrap;
-    gap: .5vw;
+    flex-flow: column wrap;
+    row-gap: 3vw;
+    box-sizing: border-box;
+    align-items: center;
 }
-
 main .gallery img {
-    height: 15vw;
-    width: auto;
+    height: auto;
+    width: 20vw;
     border-radius:.2vw;
+    position: relative;
 }
 
 main .h-container span{
@@ -23,44 +27,43 @@ input {
 }
 /* for first image*/
 #check1 ~ * #good-moral{
-    transition: height 1s ease-in-out, margin-left 1s  ease-in-out;
+    transition: width 1s ease-in-out;
 }
 #check1:checked ~ * #good-moral{
-    height: 30vw;
-    margin-left: 10vw;
+    width: 100%;
 }
 /* second image */
 #check2 ~ * #journal{
-    transition: height 1s ease-in-out;
+    transition: width 1s ease-in-out;
 }
 #check2:checked ~ * #journal{
-    height: 30vw;
+    width: 100%;
 }
 /* third */
 #check3 ~ * #ssc-elem{
-    transition: height 1s ease-in-out;
+    transition: width 1s ease-in-out;
 }
 #check3:checked ~ * #ssc-elem{
-    height: 30vw;
+    width: 100%;
 }
 /* fourth */
 #check4 ~ * #dip-elem{
-    transition: height 1s ease-in-out;
+    transition: width 1s ease-in-out;
 }
 #check4:checked ~ * #dip-elem{
-    height: 30vw;
+    width: 100%;
 }
 /* fifth */
 #check5 ~ * #dip-jhs{
-    transition: height 1s ease-in-out;
+    transition: width 1s ease-in-out;
 }
 #check5:checked ~ * #dip-jhs{
-    height: 30vw;
+    width: 100%;
 }
 /* sixth */
 #check6 ~ * #dip-shs{
-    transition: height 1s ease-in-out;
+    transition: width 1s ease-in-out;
 }
 #check6:checked ~ * #dip-shs{
-    height: 30vw;
+    width: 100%;
 }

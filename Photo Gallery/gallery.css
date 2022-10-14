@@ -1,16 +1,22 @@
 
-/* formatting gallery.html */
+/* minor adjustment */
+main .h-container span{
+    font-size: 70%;
+}
 
+/* formatting gallery.html */
 table img {
 	object-fit: cover; /* for img tags */
 	border-radius: 2vw;
 	height: 12vw;
 	width: 12vw;
 	transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+	filter: grayscale(100%);
 }
 table img:hover {
 	width: 13vw;
 	height: 13vw;
+	filter: grayscale(0);
 }
 
 
